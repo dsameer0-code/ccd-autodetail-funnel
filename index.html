@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auto Detail Shops: Get $3K–$8K From Customers You Already Have</title>
+<meta name="description" content="Free case study reveals how auto detail shops generate $3,000–$8,000 in repeat revenue from dormant customers — without spending a dollar on ads.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black: #0a0a0a;
+    --dark: #111827;
+    --dark2: #1f2937;
+    --yellow: #f59e0b;
+    --yellow-light: #fef3c7;
+    --green: #10b981;
+    --red: #ef4444;
+    --white: #ffffff;
+    --gray: #6b7280;
+    --gray-light: #f3f4f6;
+    --border: #e5e7eb;
+    --radius: 12px;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--white);
+    color: var(--dark);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  /* ===== TOP BAR ===== */
+  .topbar {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .topbar span { color: var(--yellow); }
+
+  /* ===== HERO ===== */
+  .hero {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 60%, #0a0a0a 100%);
+    padding: 60px 20px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(245,158,11,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(32px, 6vw, 58px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.1;
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 .accent { color: var(--yellow); }
+
+  .hero-sub {
+    font-size: clamp(16px, 2.5vw, 20px);
+    color: #9ca3af;
+    max-width: 680px;
+    margin: 0 auto 36px;
+    line-height: 1.7;
+  }
+  .hero-sub strong { color: var(--white); }
+
+  /* ===== VIDEO WRAPPER ===== */
+  .video-section {
+    background: var(--dark);
+    padding: 0 20px 50px;
+    text-align: center;
+  }
+  .video-wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6), 0 0 0 3px var(--yellow);
+  }
+  .video-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: block;
+    border: none;
+  }
+  .video-label {
+    background: var(--yellow);
+    color: var(--black);
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    text-align: center;
+  }
+
+  /* ===== CTA PRIMARY ===== */
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: var(--black);
+    font-weight: 800;
+    font-size: clamp(15px, 2.5vw, 18px);
+    padding: 18px 42px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 20px rgba(245,158,11,0.4);
+    line-height: 1.3;
+  }
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(245,158,11,0.55);
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  }
+  .cta-btn:active { transform: translateY(0); }
+  .cta-micro {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 10px;
+  }
+  .cta-micro.light { color: #9ca3af; }
+
+  /* ===== SECTION CONTAINER ===== */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ===== WHAT YOU'LL DISCOVER ===== */
+  .discover-section {
+    background: var(--gray-light);
+    padding: 60px 20px;
+    border-top: 4px solid var(--yellow);
+  }
+  .section-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    line-height: 1.2;
+  }
+  .bullets {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+  }
+  .bullets li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 18px 20px;
+    border-left: 4px solid var(--yellow);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .bullets li .check {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .bullets li strong { color: var(--dark); }
+
+  /* ===== STAT BAR ===== */
+  .stat-bar {
+    background: var(--dark);
+    padding: 40px 20px;
+  }
+  .stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .stat-item {
+    flex: 1;
+    min-width: 160px;
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #374151;
+  }
+  .stat-item:last-child { border-right: none; }
+  .stat-num {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(30px, 5vw, 46px);
+    font-weight: 700;
+    color: var(--yellow);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: #9ca3af;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials-section {
+    background: var(--white);
+    padding: 70px 20px;
+  }
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .testimonial-card {
+    background: var(--gray-light);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    position: relative;
+    border: 1px solid var(--border);
+  }
+  .stars {
+    color: var(--yellow);
+    font-size: 18px;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+  }
+  .testimonial-card blockquote {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--dark2);
+    font-style: italic;
+    margin-bottom: 18px;
+  }
+  .testimonial-card blockquote strong { color: var(--dark); font-style: normal; }
+  .testimonial-author {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--dark);
+  }
+  .testimonial-biz {
+    font-size: 12px;
+    color: var(--gray);
+    margin-top: 2px;
+  }
+
+  /* ===== HOW IT WORKS ===== */
+  .how-section {
+    background: var(--dark);
+    padding: 70px 20px;
+    color: var(--white);
+  }
+  .how-section .section-title { color: var(--white); }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .step-card {
+    background: #1f2937;
+    border-radius: var(--radius);
+    padding: 30px 24px;
+    border-top: 3px solid var(--yellow);
+    text-align: center;
+  }
+  .step-num {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--yellow);
+    opacity: 0.3;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .step-title {
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--white);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .step-body {
+    font-size: 14px;
+    color: #9ca3af;
+    line-height: 1.6;
+  }
+
+  /* ===== ABOUT / EXPERT ===== */
+  .about-section {
+    background: var(--white);
+    padding: 70px 20px;
+  }
+  .about-card {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    background: var(--gray-light);
+    border-radius: 16px;
+    padding: 36px;
+    border: 1px solid var(--border);
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  .about-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--yellow), #d97706);
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    box-shadow: 0 4px 20px rgba(245,158,11,0.3);
+  }
+  .about-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .about-title {
+    font-size: 13px;
+    color: var(--yellow);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .about-body {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.7;
+  }
+  .about-body p { margin-bottom: 12px; }
+  .about-body p:last-child { margin-bottom: 0; }
+  .about-body strong { color: var(--dark); }
+
+  /* ===== URGENCY BLOCK ===== */
+  .urgency-section {
+    background: linear-gradient(135deg, #7f1d1d, #991b1b);
+    padding: 50px 20px;
+    text-align: center;
+    color: var(--white);
+  }
+  .urgency-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(24px, 4vw, 36px);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .urgency-section p {
+    font-size: 16px;
+    max-width: 580px;
+    margin: 0 auto 28px;
+    opacity: 0.9;
+    line-height: 1.65;
+  }
+  .spots-counter {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+  .spots-counter .dot { width: 8px; height: 8px; background: #4ade80; border-radius: 50%; animation: pulse 1.5s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+
+  /* ===== FAQ ===== */
+  .faq-section {
+    background: var(--gray-light);
+    padding: 70px 20px;
+  }
+  .faq-list {
+    max-width: 720px;
+    margin: 40px auto 0;
+    display: grid;
+    gap: 16px;
+  }
+  .faq-item {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 24px;
+    border: 1px solid var(--border);
+  }
+  .faq-q {
+    font-weight: 800;
+    font-size: 15px;
+    color: var(--dark);
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .faq-q::before {
+    content: 'Q';
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 11px;
+    font-weight: 900;
+    padding: 2px 7px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .faq-a {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.7;
+    padding-left: 32px;
+  }
+
+  /* ===== FINAL CTA ===== */
+  .final-cta-section {
+    background: var(--dark);
+    padding: 80px 20px;
+    text-align: center;
+    color: var(--white);
+  }
+  .final-cta-section h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(28px, 5vw, 46px);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    line-height: 1.15;
+  }
+  .final-cta-section h2 .accent { color: var(--yellow); }
+  .final-cta-section p {
+    font-size: 17px;
+    max-width: 580px;
+    margin: 0 auto 36px;
+    color: #9ca3af;
+    line-height: 1.7;
+  }
+
+  /* ===== WHAT'S COVERED ===== */
+  .audit-details {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    text-align: left;
+    margin: 0 auto 36px;
+    max-width: 500px;
+  }
+  .audit-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    color: #d1d5db;
+  }
+  .audit-item .icon { color: var(--green); font-size: 16px; }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--black);
+    padding: 30px 20px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .footer a { color: #9ca3af; text-decoration: none; }
+  .footer a:hover { color: var(--yellow); }
+  .footer .disclaimer {
+    max-width: 700px;
+    margin: 0 auto 16px;
+    font-size: 11px;
+    opacity: 0.7;
+  }
+  .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 600px) {
+    .about-card { flex-direction: column; align-items: center; text-align: center; padding: 28px 20px; }
+    .stat-item { min-width: 120px; border-right: none; border-bottom: 1px solid #374151; }
+    .stat-item:last-child { border-bottom: none; }
+    .audit-details { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP URGENCY BAR -->
+<div class="topbar">
+  ⚠️ <span>LIMITED:</span> Only 3 Free Revenue Audits Available This Week — Fills by Thursday
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">🚗 Free Case Study for Auto Detail Shop Owners</span>
+    <h1>
+      How Auto Detail Shops Are Getting
+      <span class="accent">$3,000–$8,000</span>
+      From Customers They Already Have — Without Spending a Dollar on Ads
+    </h1>
+    <p class="hero-sub">
+      You've already done the hard work to get these customers in the door.
+      <strong>We show you how to get them back — on autopilot — in 7–14 days.</strong>
+    </p>
+    <a href="https://oncehub.com/PAGE-A2441E2BBC" target="_blank" class="cta-btn">
+      👉 Watch the Free Case Study + Book Your Revenue Audit
+    </a>
+    <p class="cta-micro light" style="margin-top:14px;">Takes 5 minutes to watch. 100% free. No fluff.</p>
+  </div>
+</section>
+
+<!-- ===== VIDEO ===== -->
+<section class="video-section">
+  <div class="container">
+    <div class="video-label">▶ WATCH: How the Customer Revival Campaign Works for Auto Detailers (5 min)</div>
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/ou_LVB2MWRo?autoplay=0&rel=0&controls=1&modestbranding=1"
+        title="Customer Revival Campaign for Auto Detail Shops"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STAT BAR ===== -->
+<section class="stat-bar">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num">$4,200</div>
+      <div class="stat-label">Avg. 1st Campaign</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">11 Days</div>
+      <div class="stat-label">Avg. Time to Revenue</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">0 Ads</div>
+      <div class="stat-label">Required to Run This</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">48 hrs</div>
+      <div class="stat-label">Campaign Goes Live</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT YOU'LL DISCOVER ===== -->
+<section class="discover-section">
+  <div class="container">
+    <p class="section-label">What You'll Discover in the Case Study</p>
+    <h2 class="section-title">Your Old Customer List Is Sitting on Months of Revenue You're Not Collecting</h2>
+    <ul class="bullets">
+      <li>
+        <span class="check">✅</span>
+        <span><strong>Why 60–70% of your past customers are ready to rebook</strong> — they just never got a reason to. We show you the exact message that triggers them.</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>The 3-email Customer Revival sequence</strong> that brought one detailing shop $4,200 in 11 days — from a list they thought was "dead."</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>Why running more ads is the wrong move</strong> when you're sitting on a database of past buyers who already trust you.</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>How we identify your highest-value "lapsed" customers</strong> and prioritize them for maximum revenue per campaign send.</span>
+      </li>
+      <li>
+        <span class="check">✅</span>
+        <span><strong>The "Done For You" setup process</strong> — we write it, build it, and launch it. You don't need to touch a single piece of software.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials-section">
+  <div class="container">
+    <p class="section-label" style="text-align:center;">Real Results from Real Shop Owners</p>
+    <h2 class="section-title" style="text-align:center;">What Detailers Are Saying</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          "I had a list of <strong>1,100 past customers</strong> just sitting there. Sameer's team ran a 3-email campaign and we booked <strong>$4,800 in detail jobs within 2 weeks.</strong> I didn't spend a penny on ads. I'm kicking myself for not doing this sooner."
+        </blockquote>
+        <div class="testimonial-author">Marcus T.</div>
+        <div class="testimonial-biz">Precision Auto Detail — Atlanta, GA</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          "Slow January — I was stressing. They sent a campaign to my old customers on a Tuesday. By Friday I had <strong>9 new bookings</strong> and $3,200 locked in. <strong>No discounts, no Groupon, no BS.</strong> Just emails to people who already knew us."
+        </blockquote>
+        <div class="testimonial-author">Ryan C.</div>
+        <div class="testimonial-biz">AutoShine Pro — Dallas, TX</div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <blockquote>
+          "I was skeptical because I'd been burned by agencies before. The difference is they didn't charge me upfront to 'figure it out.' <strong>The first campaign paid for the whole engagement</strong> and then some. That was 6 months ago — still running."
+        </blockquote>
+        <div class="testimonial-author">Jason R.</div>
+        <div class="testimonial-biz">DetailKing Mobile — Phoenix, AZ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how-section">
+  <div class="container">
+    <p class="section-label">The Process</p>
+    <h2 class="section-title">From Your Customer List to Revenue in 3 Steps</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-title">We Audit Your List</div>
+        <div class="step-body">We analyze your existing customer database to identify dormant buyers and high-value lapsed clients. Takes 24 hours — you don't touch a thing.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-title">We Build the Campaign</div>
+        <div class="step-body">We write and deploy a 3-email Customer Revival sequence custom-built for your shop, your services, and your customer base. Live in 48 hours.</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-title">You Collect Bookings</div>
+        <div class="step-body">Within 7–14 days you see responses, booked appointments, and revenue from customers who haven't visited in months. Zero ad spend. Pure reactivation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT SAMEER ===== -->
+<section class="about-section">
+  <div class="container">
+    <p class="section-label" style="text-align:center;">Your Growth Strategist</p>
+    <div class="about-card">
+      <div class="about-img">👤</div>
+      <div>
+        <div class="about-name">Sameer Dhawan</div>
+        <div class="about-title">Customer Revival Campaign Specialist | NextGen Web LLC</div>
+        <div class="about-body">
+          <p>Sameer spent over a decade building high-volume retention systems for Macys.com, Beyond.com, and Verizon Wireless — studying why customers buy once and never come back.</p>
+          <p>The answer was always the same: <strong>nobody asked them to.</strong></p>
+          <p>Today Sameer uses the licensed <strong>Customer Revival Campaign system</strong> to help local service businesses — including auto detail shops — systematically re-engage their past customers and generate predictable repeat revenue without running a single ad.</p>
+          <p>If you have a customer list and you're not emailing it at least once a month with a targeted re-booking campaign, <strong>you're leaving thousands of dollars on the table every week.</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== URGENCY ===== -->
+<section class="urgency-section">
+  <div class="container">
+    <div class="spots-counter">
+      <span class="dot"></span>
+      LIVE: 3 Audit Spots Open This Week
+    </div>
+    <h2>⚠️ We Only Take 3 New Clients Per Week</h2>
+    <p>
+      Because every Customer Revival Campaign requires custom strategy, custom copy, and hands-on setup, we strictly cap new onboarding at <strong>3 shop owners per week</strong>. Spots fill by Thursday — every single week.
+    </p>
+    <a href="https://oncehub.com/PAGE-A2441E2BBC" target="_blank" class="cta-btn">
+      🗓 Claim My Free Revenue Audit — See What My List Is Worth
+    </a>
+    <p class="cta-micro" style="color:rgba(255,255,255,0.5); margin-top:12px;">30 minutes. No obligation. Hosted by Sameer personally.</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section">
+  <div class="container">
+    <p class="section-label" style="text-align:center;">Frequently Asked Questions</p>
+    <h2 class="section-title" style="text-align:center;">Got Questions? We've Got Answers.</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Do I need a big list for this to work?</div>
+        <div class="faq-a">Not at all. We've run campaigns for shops with as few as 300 past customers and generated $2,000+ in new bookings. The quality of the relationship matters more than the size of the list.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if I haven't emailed my customers in a year — or ever?</div>
+        <div class="faq-a">That's actually where we see the biggest results. "Cold" customer lists often outperform recently emailed ones because those customers haven't been burned out by promotions. A well-crafted re-engagement message hits differently when they haven't heard from you.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long until I see bookings?</div>
+        <div class="faq-a">Most shops see inbound responses within 48–72 hours of campaign launch. Most see confirmed bookings within 7–14 days. Some see results within the first 24 hours.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is this just email blasting? I've tried that and it didn't work.</div>
+        <div class="faq-a">No. Generic blasts fail because they're impersonal and poorly timed. The Customer Revival Campaign uses specific segmentation, behavioral timing triggers, and proven copy frameworks built specifically for local service businesses. It's the difference between shouting into a crowd and having a one-to-one conversation with a past customer.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What does the free audit call cover?</div>
+        <div class="faq-a">We review your existing customer data (size, recency, service mix), estimate the revenue opportunity in your specific list, and walk you through exactly what a campaign would look like for your shop. No sales pitch — just data. If it makes sense to work together, we'll tell you. If it doesn't, we'll tell you that too.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What does it cost?</div>
+        <div class="faq-a">The audit call is completely free. If you decide to move forward with a campaign, we'll give you a clear quote on the call with no hidden fees. Most shops recover the investment in the first campaign.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final-cta-section">
+  <div class="container">
+    <h2>Ready to Stop Leaving Money<br><span class="accent">in Your Customer List?</span></h2>
+    <p>You've already done the hard work — you have customers who trust your work. Let's go get them booked again.</p>
+    <div class="audit-details">
+      <div class="audit-item"><span class="icon">✓</span> We analyze your customer list</div>
+      <div class="audit-item"><span class="icon">✓</span> You get a revenue estimate</div>
+      <div class="audit-item"><span class="icon">✓</span> We show the exact campaign</div>
+      <div class="audit-item"><span class="icon">✓</span> 100% free, no obligation</div>
+    </div>
+    <a href="https://oncehub.com/PAGE-A2441E2BBC" target="_blank" class="cta-btn">
+      📅 Book My Free Revenue Audit Now
+    </a>
+    <p class="cta-micro light" style="margin-top:14px;">Available Mon–Fri · 30 minutes · Hosted by Sameer Dhawan personally</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="disclaimer">
+    This page is part of the licensed Customer Revival Campaign system by CustomerRevival.com. Independently operated by Sameer Dhawan / NextGen Web LLC. All consultations are conducted by independently trained specialists certified by the Customer Revival Campaign system. Results are not guaranteed and may vary based on list size, customer recency, and market conditions. Individual results will differ.
+  </div>
+  <p>© 2026 NextGen Web LLC | All Rights Reserved</p>
+  <div class="footer-links" style="margin-top:12px;">
+    <a href="https://autohubdetail.com/privacy">Privacy Policy</a>
+    <a href="https://autohubdetail.com/terms-4800">Terms & Conditions</a>
+    <a href="https://autohubdetail.com/earnings-257102">Earnings Disclaimer</a>
+  </div>
+</footer>
+
+<!-- TRACKING: GHL & Conversion Events -->
+<script>
+  // Fire booking intent event on CTA clicks
+  document.querySelectorAll('a.cta-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      // GHL tracking
+      if (typeof LeadConnector !== 'undefined') {
+        LeadConnector.track('booking_intent', { page: 'ccd-autodetail' });
+      }
+      // Facebook Pixel if loaded
+      if (typeof fbq === 'function') {
+        fbq('track', 'Schedule');
+      }
+      // Google Analytics 4
+      if (typeof gtag === 'function') {
+        gtag('event', 'booking_click', { 'event_category': 'cta', 'event_label': 'ccd_autodetail' });
+      }
+    });
+  });
+
+  // Scroll depth tracking
+  let tracked = { 25: false, 50: false, 75: false, 90: false };
+  window.addEventListener('scroll', () => {
+    const pct = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+    Object.keys(tracked).forEach(depth => {
+      if (pct >= depth && !tracked[depth]) {
+        tracked[depth] = true;
+        if (typeof gtag === 'function') gtag('event', 'scroll_depth', { depth: depth + '%' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
